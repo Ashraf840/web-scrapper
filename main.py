@@ -24,7 +24,7 @@ def website_with_offer():
           offer_result[wl] = find_max_offer(check_offer[1])
       return offer_result
     else:
-      return jsonify("Maxed out! Please decrease the number of URL to 30")
+      return jsonify("Maxed out! Please decrease the number of URL to 15")
       # break
   if request.method == 'GET':
     data = {'message': []}
