@@ -1,0 +1,2 @@
+Inspiration for deploying flask app with NGINX & Gunicorn
+Article Link: https://www.rosehosting.com/blog/how-to-deploy-flask-application-with-nginx-and-gunicorn-on-ubuntu-20-04/
