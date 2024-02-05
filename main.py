@@ -15,7 +15,7 @@ def website_with_offer():
       print(req)
     offer_result = {}
     website_list = json_data.get('website_list')
-    if len(website_list) < 30:
+    if len(website_list) < 15:
       for wl in website_list:
         print(wl)
         result = scrapper(url=wl)
@@ -24,7 +24,7 @@ def website_with_offer():
           offer_result[wl] = find_max_offer(check_offer[1])
       return offer_result
     else:
-      return jsonify("Maxed out! Please decrease the number of URL to 30")
+      return jsonify("Maxed out! Please decrease the number of URL to 15")
       # break
   if request.method == 'GET':
     data = {'message': []}
